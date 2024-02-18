@@ -45,7 +45,7 @@ main {
   top: 10px;
 }
 .input {
-  margin-top: 20px;
+  margin: 20px 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -56,7 +56,7 @@ main {
   border-radius: 30px;
 }
 .input-text {
-  width: 90%;
+  /* width: 90%; */
   border: none;
   background-color: transparent;
   height: 40px;
