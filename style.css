@@ -97,6 +97,12 @@ main {
   height: 25px;
   width: 25px;
   border-radius: 50%;
+  position: absolute;
+  left: 80px;
+}
+.invisble {
+  opacity: 0;
+  display: none;
 }
 .item-1 {
   display: flex;
