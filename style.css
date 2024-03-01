@@ -15,15 +15,14 @@ body {
 }
 main {
   display: flex;
+  /* flex-wrap: wrap; */
   margin-top: 50px;
 }
 .toDoList {
-  width: 50%;
   /* background-color: aqua; */
 }
 .notes {
-  width: 50%;
-  /* background-color: rgb(56, 70, 70); */
+  background-color: rgb(56, 70, 70);
 }
 
 /* todolist */
@@ -79,6 +78,63 @@ main {
   background-color: #ddcbaa;
   color: rgb(255, 134, 20);
 }
+
+.list li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-bottom: 25px;
+  padding: 0 25px;
+  position: relative;
+  left: 25px;
+}
+.item-1 {
+  /* background-color: #ddcbaa; */
+  cursor: pointer;
+  width: 80%;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+}
+.item-1 p {
+  font-size: 20px;
+  font-weight: 500;
+}
+.img-status {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+
+  background-image: url(imgs/To-Do-Img/images/unchecked.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.unchecked {
+  background-image: url(imgs/To-Do-Img/images/unchecked.png);
+}
+.checked {
+  background-image: url(imgs/To-Do-Img/images/checked.png);
+}
+
+.item button {
+  font-size: 20px;
+  font-weight: 600;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.item button:hover {
+  background-color: rgba(240, 139, 17, 0.3);
+}
+.item-1 img:hover {
+  transform: scale(1.1);
+}
+
+/*
 .list-items {
   margin-left: 60px;
 }
@@ -86,12 +142,15 @@ main {
   list-style-type: none;
 }
 
+.list {
+  position: relative;
+  left: 20px;
+}
 .item {
   margin-top: 30px;
   display: flex;
   justify-content: space-between;
   cursor: pointer;
-  margin-right: 50px;
 }
 .item img {
   height: 25px;
@@ -107,18 +166,4 @@ main {
 .item-1 {
   display: flex;
   gap: 10px;
-}
-.item button {
-  font-size: 20px;
-  font-weight: 600;
-  width: 50px;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-}
-.item button:hover {
-  background-color: rgba(240, 139, 17, 0.3);
-}
-.item-1 img:hover {
-  transform: scale(1.1);
-}
+} */
