@@ -20,6 +20,7 @@ main {
 }
 .toDoList {
   /* background-color: aqua; */
+  padding: 20px;
 }
 .notes {
   background-color: rgb(56, 70, 70);
@@ -29,9 +30,10 @@ main {
 
 .container {
   background-color: aliceblue;
-  margin: 20px 40px;
+  margin: 20px auto;
   border-radius: 20px;
   padding: 20px;
+  min-width: 500px;
 }
 .container h2 {
   padding-left: 60px;
