@@ -7,23 +7,24 @@
   box-sizing: border-box;
 }
 body {
-  background: linear-gradient(
+  background-color: rgb(201, 216, 229);
+  /* background: linear-gradient(
     90deg,
     rgba(146, 64, 64, 1) 20%,
     rgba(185, 81, 36, 1) 75%
-  );
+  ); */
 }
 main {
   display: flex;
-  /* flex-wrap: wrap; */
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 .toDoList {
   /* background-color: aqua; */
   padding: 20px;
 }
-.notes {
-  background-color: rgb(56, 70, 70);
+.notes-container {
+  margin: 0 auto;
 }
 
 /* todolist */
@@ -136,36 +137,54 @@ main {
   transform: scale(1.1);
 }
 
-/*
-.list-items {
-  margin-left: 60px;
-}
-.list-items ul {
-  list-style-type: none;
-}
+/* noteMaking************ */
 
-.list {
-  position: relative;
-  left: 20px;
-}
-.item {
-  margin-top: 30px;
+.notes-container h2 {
+  margin: 20px 10px;
   display: flex;
-  justify-content: space-between;
+
+  align-items: center;
+  font-size: 35px;
+  gap: 10px;
+}
+.notes-container h2 img {
+  width: 50px;
+}
+.notes-container button {
+  margin: 20px 60px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 140px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background-color: rgb(91, 63, 233);
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 13px;
   cursor: pointer;
 }
-.item img {
-  height: 25px;
+.notes-container button img {
   width: 25px;
-  border-radius: 50%;
+}
+.notes-container .notes p {
+  margin: 20px;
+  height: 200px;
+  width: 500px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 20px;
+  box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.notes p img {
+  width: 40px;
   position: absolute;
-  left: 80px;
+  bottom: 15px;
+  right: 15px;
+  cursor: pointer;
+  padding: 7px;
 }
-.invisble {
-  opacity: 0;
-  display: none;
+.notes p img:hover {
+  background-color: #cecbcb;
 }
-.item-1 {
-  display: flex;
-  gap: 10px;
-} */
