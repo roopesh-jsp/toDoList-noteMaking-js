@@ -38,3 +38,24 @@ tasksContainer.addEventListener("click", (e) => {
   const imgToggel = item.querySelector(".img-status");
   imgToggel.classList.toggle("checked");
 });
+
+// noteMaking**********************
+const notes = document.querySelector(".notes");
+const addNote = document.querySelector(".addNote");
+const delNote = document.querySelector(".delNote");
+let note = ` <p class="input-box" contenteditable="true">
+<img
+  class="delNote"
+  src="imgs/notes-app-img/images/delete.png"
+  alt=""
+/>
+</p>`;
+addNote.addEventListener("click", () => {
+  notes.insertAdjacentHTML("beforeend", note);
+});
+notes.addEventListener("click", (e) => {
+  console.log(e.target.classList.contains("delNote"));
+  if (e.target.classList.contains("delNote")) {
+    e.target.closest("p").remove();
+  }
+});

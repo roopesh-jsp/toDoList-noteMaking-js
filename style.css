@@ -22,6 +22,9 @@ main {
 .toDoList {
   /* background-color: aqua; */
   padding: 20px;
+  position: relative;
+  top: 130px;
+  margin: 0 auto;
 }
 .notes-container {
   margin: 0 auto;
@@ -169,6 +172,7 @@ main {
   width: 25px;
 }
 .notes-container .notes p {
+  padding: 20px;
   margin: 20px;
   height: 200px;
   width: 500px;
@@ -176,6 +180,9 @@ main {
   position: relative;
   border-radius: 20px;
   box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}
+.notes p:focus {
+  outline: none;
 }
 .notes p img {
   width: 40px;
@@ -187,4 +194,10 @@ main {
 }
 .notes p img:hover {
   background-color: #cecbcb;
+}
+
+@media (max-width: 1079px) {
+  .toDoList {
+    top: 0;
+  }
 }
